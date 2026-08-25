@@ -1,0 +1,58 @@
+[
+  {
+    "name": "request",
+    "replacementEase": 78,
+    "compatibilityBurden": 66,
+    "enterpriseFit": 82,
+    "note": "Large legacy surface, but migration to modern HTTP clients is usually possible."
+  },
+  {
+    "name": "enzyme",
+    "replacementEase": 42,
+    "compatibilityBurden": 78,
+    "enterpriseFit": 84,
+    "note": "Legacy React test suites can be expensive to rewrite and newer React support is fragmented."
+  },
+  {
+    "name": "node-sass",
+    "replacementEase": 74,
+    "compatibilityBurden": 92,
+    "enterpriseFit": 76,
+    "note": "Native runtime compatibility is painful, although Dart Sass is a strong successor."
+  },
+  {
+    "name": "csurf",
+    "replacementEase": 58,
+    "compatibilityBurden": 58,
+    "enterpriseFit": 81,
+    "note": "Security-sensitive Express middleware with substantial installed legacy usage."
+  },
+  {
+    "name": "express-graphql",
+    "replacementEase": 72,
+    "compatibilityBurden": 52,
+    "enterpriseFit": 75,
+    "note": "Deprecated integration layer with a documented successor and meaningful legacy usage."
+  },
+  {
+    "name": "react-beautiful-dnd",
+    "replacementEase": 64,
+    "compatibilityBurden": 74,
+    "enterpriseFit": 80,
+    "note": "Archived UI dependency embedded in many mature React applications."
+  },
+  {
+    "name": "inflight",
+    "replacementEase": 94,
+    "compatibilityBurden": 14,
+    "enterpriseFit": 25,
+    "note": "Huge transitive usage but a narrow API and straightforward replacement path."
+  },
+  {
+    "name": "tslint",
+    "replacementEase": 91,
+    "compatibilityBurden": 25,
+    "enterpriseFit": 55,
+    "note": "Large historical footprint, but the ecosystem has standardized on ESLint."
+  }
+]

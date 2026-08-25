@@ -1,0 +1,356 @@
+{
+  "schema": "last-maintainer/extinction-index@1",
+  "generatedAt": "2026-08-25T12:19:26.093Z",
+  "policy": {
+    "minimumMonthlyDownloads": 100000,
+    "investigateScore": 60,
+    "adoptScore": 75
+  },
+  "candidates": [
+    {
+      "facts": {
+        "name": "request",
+        "latestVersion": "2.88.2",
+        "description": "Simplified HTTP request client.",
+        "downloadsMonthly": 57120277,
+        "latestPublishedAt": "2020-02-11T16:35:36.122Z",
+        "daysSincePublish": 2386,
+        "deprecated": true,
+        "deprecationMessage": "request has been deprecated, see https://github.com/request/request/issues/3142",
+        "license": "Apache-2.0",
+        "licenseAllowed": true,
+        "repositoryUrl": "https://github.com/request/request",
+        "repositoryArchived": false,
+        "repositoryPushedAt": "2024-08-14T00:09:41Z",
+        "daysSincePush": 741,
+        "stars": 25513,
+        "forks": 3145,
+        "openIssues": 143,
+        "githubError": null,
+        "replacementEase": 78,
+        "compatibilityBurden": 66,
+        "enterpriseFit": 82,
+        "analystNote": "Large legacy surface, but migration to modern HTTP clients is usually possible.",
+        "evidence": {
+          "registry": "https://registry.npmjs.org/request",
+          "downloads": "https://api.npmjs.org/downloads/point/last-month/request",
+          "repository": "https://github.com/request/request"
+        }
+      },
+      "assessment": {
+        "score": 73.4,
+        "decision": "INVESTIGATE",
+        "confidence": 1,
+        "signals": {
+          "demand": 91.9,
+          "abandonment": 88,
+          "replacementResistance": 22,
+          "compatibilityBurden": 66,
+          "enterpriseFit": 82
+        }
+      }
+    },
+    {
+      "facts": {
+        "name": "react-beautiful-dnd",
+        "latestVersion": "13.1.1",
+        "description": "Beautiful and accessible drag and drop for lists with React",
+        "downloadsMonthly": 9166072,
+        "latestPublishedAt": "2022-08-30T04:15:39.512Z",
+        "daysSincePublish": 1456,
+        "deprecated": true,
+        "deprecationMessage": "react-beautiful-dnd is now deprecated. Context and options: https://github.com/atlassian/react-beautiful-dnd/issues/2672",
+        "license": "Apache-2.0",
+        "licenseAllowed": true,
+        "repositoryUrl": "https://github.com/atlassian/react-beautiful-dnd",
+        "repositoryArchived": true,
+        "repositoryPushedAt": "2025-08-18T04:35:31Z",
+        "daysSincePush": 372,
+        "stars": 33947,
+        "forks": 2698,
+        "openIssues": 643,
+        "githubError": null,
+        "replacementEase": 64,
+        "compatibilityBurden": 74,
+        "enterpriseFit": 80,
+        "analystNote": "Archived UI dependency embedded in many mature React applications.",
+        "evidence": {
+          "registry": "https://registry.npmjs.org/react-beautiful-dnd",
+          "downloads": "https://api.npmjs.org/downloads/point/last-month/react-beautiful-dnd",
+          "repository": "https://github.com/atlassian/react-beautiful-dnd"
+        }
+      },
+      "assessment": {
+        "score": 72.8,
+        "decision": "INVESTIGATE",
+        "confidence": 1,
+        "signals": {
+          "demand": 65.4,
+          "abandonment": 100,
+          "replacementResistance": 36,
+          "compatibilityBurden": 74,
+          "enterpriseFit": 80
+        }
+      }
+    },
+    {
+      "facts": {
+        "name": "node-sass",
+        "latestVersion": "9.0.0",
+        "description": "Wrapper around libsass",
+        "downloadsMonthly": 3795870,
+        "latestPublishedAt": "2023-05-20T06:03:42.097Z",
+        "daysSincePublish": 1193,
+        "deprecated": true,
+        "deprecationMessage": "Node Sass is no longer supported. Please use `sass` or `sass-embedded` instead.",
+        "license": "MIT",
+        "licenseAllowed": true,
+        "repositoryUrl": "https://github.com/sass/node-sass",
+        "repositoryArchived": true,
+        "repositoryPushedAt": "2024-07-24T21:59:31Z",
+        "daysSincePush": 761,
+        "stars": 8457,
+        "forks": 1304,
+        "openIssues": 187,
+        "githubError": null,
+        "replacementEase": 74,
+        "compatibilityBurden": 92,
+        "enterpriseFit": 76,
+        "analystNote": "Native runtime compatibility is painful, although Dart Sass is a strong successor.",
+        "evidence": {
+          "registry": "https://registry.npmjs.org/node-sass",
+          "downloads": "https://api.npmjs.org/downloads/point/last-month/node-sass",
+          "repository": "https://github.com/sass/node-sass"
+        }
+      },
+      "assessment": {
+        "score": 69.3,
+        "decision": "INVESTIGATE",
+        "confidence": 1,
+        "signals": {
+          "demand": 52.6,
+          "abandonment": 100,
+          "replacementResistance": 26,
+          "compatibilityBurden": 92,
+          "enterpriseFit": 76
+        }
+      }
+    },
+    {
+      "facts": {
+        "name": "csurf",
+        "latestVersion": "1.11.0",
+        "description": "CSRF token middleware",
+        "downloadsMonthly": 1852556,
+        "latestPublishedAt": "2020-01-19T04:28:49.953Z",
+        "daysSincePublish": 2410,
+        "deprecated": true,
+        "deprecationMessage": "This package is archived and no longer maintained. For support, visit https://github.com/expressjs/express/discussions",
+        "license": "MIT",
+        "licenseAllowed": true,
+        "repositoryUrl": "https://github.com/expressjs/csurf",
+        "repositoryArchived": true,
+        "repositoryPushedAt": "2025-05-14T13:34:34Z",
+        "daysSincePush": 467,
+        "stars": 2307,
+        "forks": 219,
+        "openIssues": 0,
+        "githubError": null,
+        "replacementEase": 58,
+        "compatibilityBurden": 58,
+        "enterpriseFit": 81,
+        "analystNote": "Security-sensitive Express middleware with substantial installed legacy usage.",
+        "evidence": {
+          "registry": "https://registry.npmjs.org/csurf",
+          "downloads": "https://api.npmjs.org/downloads/point/last-month/csurf",
+          "repository": "https://github.com/expressjs/csurf"
+        }
+      },
+      "assessment": {
+        "score": 65.7,
+        "decision": "INVESTIGATE",
+        "confidence": 1,
+        "signals": {
+          "demand": 42.3,
+          "abandonment": 100,
+          "replacementResistance": 42,
+          "compatibilityBurden": 58,
+          "enterpriseFit": 81
+        }
+      }
+    },
+    {
+      "facts": {
+        "name": "inflight",
+        "latestVersion": "1.0.6",
+        "description": "Add callbacks to requests in flight to avoid async duplication",
+        "downloadsMonthly": 361649384,
+        "latestPublishedAt": "2016-10-13T03:53:29.524Z",
+        "daysSincePublish": 3603,
+        "deprecated": true,
+        "deprecationMessage": "This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.",
+        "license": "ISC",
+        "licenseAllowed": true,
+        "repositoryUrl": "https://github.com/isaacs/inflight-DEPRECATED-DO-NOT-USE",
+        "repositoryArchived": true,
+        "repositoryPushedAt": "2024-05-23T03:18:30Z",
+        "daysSincePush": 824,
+        "stars": 76,
+        "forks": 17,
+        "openIssues": 0,
+        "githubError": null,
+        "replacementEase": 94,
+        "compatibilityBurden": 14,
+        "enterpriseFit": 25,
+        "analystNote": "Huge transitive usage but a narrow API and straightforward replacement path.",
+        "evidence": {
+          "registry": "https://registry.npmjs.org/inflight",
+          "downloads": "https://api.npmjs.org/downloads/point/last-month/inflight",
+          "repository": "https://github.com/isaacs/inflight-DEPRECATED-DO-NOT-USE"
+        }
+      },
+      "assessment": {
+        "score": 60.6,
+        "decision": "INVESTIGATE",
+        "confidence": 1,
+        "signals": {
+          "demand": 100,
+          "abandonment": 100,
+          "replacementResistance": 6,
+          "compatibilityBurden": 14,
+          "enterpriseFit": 25
+        }
+      }
+    },
+    {
+      "facts": {
+        "name": "express-graphql",
+        "latestVersion": "0.12.0",
+        "description": "Production ready GraphQL HTTP middleware.",
+        "downloadsMonthly": 1270655,
+        "latestPublishedAt": "2020-11-19T15:09:19.169Z",
+        "daysSincePublish": 2104,
+        "deprecated": true,
+        "deprecationMessage": "This package is no longer maintained. We recommend using `graphql-http` instead. Please consult the migration document https://github.com/graphql/graphql-http#migrating-express-grpahql.",
+        "license": "MIT",
+        "licenseAllowed": true,
+        "repositoryUrl": "https://github.com/graphql/express-graphql",
+        "repositoryArchived": true,
+        "repositoryPushedAt": "2023-03-05T00:10:53Z",
+        "daysSincePush": 1269,
+        "stars": 6260,
+        "forks": 520,
+        "openIssues": 54,
+        "githubError": null,
+        "replacementEase": 72,
+        "compatibilityBurden": 52,
+        "enterpriseFit": 75,
+        "analystNote": "Deprecated integration layer with a documented successor and meaningful legacy usage.",
+        "evidence": {
+          "registry": "https://registry.npmjs.org/express-graphql",
+          "downloads": "https://api.npmjs.org/downloads/point/last-month/express-graphql",
+          "repository": "https://github.com/graphql/express-graphql"
+        }
+      },
+      "assessment": {
+        "score": 60,
+        "decision": "WATCH",
+        "confidence": 1,
+        "signals": {
+          "demand": 36.8,
+          "abandonment": 100,
+          "replacementResistance": 28,
+          "compatibilityBurden": 52,
+          "enterpriseFit": 75
+        }
+      }
+    },
+    {
+      "facts": {
+        "name": "tslint",
+        "latestVersion": "6.1.3",
+        "description": "An extensible static analysis linter for the TypeScript language",
+        "downloadsMonthly": 7633047,
+        "latestPublishedAt": "2020-07-31T17:25:07.479Z",
+        "daysSincePublish": 2215,
+        "deprecated": true,
+        "deprecationMessage": "TSLint has been deprecated in favor of ESLint. Please see https://github.com/palantir/tslint/issues/4534 for more information.",
+        "license": "Apache-2.0",
+        "licenseAllowed": true,
+        "repositoryUrl": "https://github.com/palantir/tslint",
+        "repositoryArchived": true,
+        "repositoryPushedAt": "2021-03-25T15:41:38Z",
+        "daysSincePush": 1978,
+        "stars": 5902,
+        "forks": 873,
+        "openIssues": 1,
+        "githubError": null,
+        "replacementEase": 91,
+        "compatibilityBurden": 25,
+        "enterpriseFit": 55,
+        "analystNote": "Large historical footprint, but the ecosystem has standardized on ESLint.",
+        "evidence": {
+          "registry": "https://registry.npmjs.org/tslint",
+          "downloads": "https://api.npmjs.org/downloads/point/last-month/tslint",
+          "repository": "https://github.com/palantir/tslint"
+        }
+      },
+      "assessment": {
+        "score": 57.1,
+        "decision": "WATCH",
+        "confidence": 1,
+        "signals": {
+          "demand": 62.8,
+          "abandonment": 100,
+          "replacementResistance": 9,
+          "compatibilityBurden": 25,
+          "enterpriseFit": 55
+        }
+      }
+    },
+    {
+      "facts": {
+        "name": "enzyme",
+        "latestVersion": "3.11.0",
+        "description": "JavaScript Testing utilities for React",
+        "downloadsMonthly": 5419362,
+        "latestPublishedAt": "2019-12-20T00:08:40.725Z",
+        "daysSincePublish": 2440,
+        "deprecated": false,
+        "deprecationMessage": null,
+        "license": "MIT",
+        "licenseAllowed": true,
+        "repositoryUrl": "https://github.com/enzymejs/enzyme",
+        "repositoryArchived": false,
+        "repositoryPushedAt": "2025-10-22T15:55:30Z",
+        "daysSincePush": 306,
+        "stars": 19826,
+        "forks": 1967,
+        "openIssues": 282,
+        "githubError": null,
+        "replacementEase": 42,
+        "compatibilityBurden": 78,
+        "enterpriseFit": 84,
+        "analystNote": "Legacy React test suites can be expensive to rewrite and newer React support is fragmented.",
+        "evidence": {
+          "registry": "https://registry.npmjs.org/enzyme",
+          "downloads": "https://api.npmjs.org/downloads/point/last-month/enzyme",
+          "repository": "https://github.com/enzymejs/enzyme"
+        }
+      },
+      "assessment": {
+        "score": 51.4,
+        "decision": "WATCH",
+        "confidence": 1,
+        "signals": {
+          "demand": 57.8,
+          "abandonment": 9.8,
+          "replacementResistance": 58,
+          "compatibilityBurden": 78,
+          "enterpriseFit": 84
+        }
+      }
+    }
+  ],
+  "sha256": "a2b0ebf75762cd2014781084fdb73b760db72a8bfe1dc97cc763034c4ddd1f03"
+}

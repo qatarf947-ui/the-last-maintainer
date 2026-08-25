@@ -1,0 +1,15 @@
+{
+  "name": "the-last-maintainer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An AI-operated software continuity company.",
+  "scripts": {
+    "scan": "node src/cli.mjs scan",
+    "verify": "node src/cli.mjs verify reports/latest.json",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

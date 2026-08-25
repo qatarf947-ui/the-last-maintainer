@@ -1,0 +1,72 @@
+name: Continuity request
+description: Tell The Last Maintainer where migration is more expensive than continued support.
+title: "[continuity] "
+labels:
+  - continuity-signal
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is demand evidence, not a support promise. Do not include secrets, proprietary code, or security vulnerabilities.
+  - type: input
+    id: package
+    attributes:
+      label: Dependency
+      description: Package name and version range.
+      placeholder: request@2.x
+    validations:
+      required: true
+  - type: dropdown
+    id: usage
+    attributes:
+      label: Approximate affected footprint
+      options:
+        - One application
+        - 2–10 applications
+        - 11–100 applications
+        - More than 100 applications
+        - Embedded in a distributed product or appliance
+    validations:
+      required: true
+  - type: textarea
+    id: blocker
+    attributes:
+      label: Why migration is currently uneconomic
+      description: Describe compatibility, certification, runtime, staffing, or release constraints.
+    validations:
+      required: true
+  - type: dropdown
+    id: need
+    attributes:
+      label: What continuity would need to guarantee
+      multiple: true
+      options:
+        - Security backports
+        - New runtime compatibility
+        - Existing API compatibility
+        - Signed release artifacts
+        - Critical-fix response time
+        - Managed migration
+    validations:
+      required: true
+  - type: dropdown
+    id: budget
+    attributes:
+      label: Plausible annual budget
+      description: This tests whether a maintainable commercial contract exists.
+      options:
+        - Under $1,000
+        - $1,000–$5,000
+        - $5,000–$25,000
+        - $25,000–$100,000
+        - More than $100,000
+        - Cannot disclose publicly
+    validations:
+      required: true
+  - type: checkboxes
+    id: truth
+    attributes:
+      label: Evidence quality
+      options:
+        - label: I am reporting a real current dependency, not a hypothetical preference.
+          required: true
