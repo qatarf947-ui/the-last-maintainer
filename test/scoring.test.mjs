@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { buildSnapshot, verifySnapshot } from "../src/report.mjs";
 import { demandScore, scoreCandidate } from "../src/scoring.mjs";
 import { parseGitHubRepository } from "../src/sources.mjs";
+import { buildLedger, verifyLedger } from "../src/economics.mjs";
 
 test("demand score honors the 100k floor and saturates at 100m", () => {
   assert.equal(demandScore(100_000), 0);
@@ -53,4 +54,22 @@ test("snapshot digest detects mutation", () => {
   assert.equal(verifySnapshot(snapshot).valid, true);
   snapshot.policy.adoptScore = 1;
   assert.equal(verifySnapshot(snapshot).valid, false);
+});
+
+test("economic ledger recognizes received cash and detects tampering", () => {
+  const ledger = buildLedger([
+    {
+      occurredAt: "2026-08-25T00:00:00.000Z",
+      type: "REVENUE_RECEIVED",
+      subject: "Test contract",
+      amountCents: 1200,
+      currency: "USD",
+      evidence: "urn:receipt:test",
+      note: "Test only.",
+    },
+  ]);
+  assert.equal(ledger.recognizedRevenueCents, 1200);
+  assert.equal(verifyLedger(ledger), true);
+  ledger.events[0].amountCents = 999999;
+  assert.equal(verifyLedger(ledger), false);
 });

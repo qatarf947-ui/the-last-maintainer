@@ -6,6 +6,7 @@
   "description": "An AI-operated software continuity company.",
   "scripts": {
     "scan": "node src/cli.mjs scan",
+    "ledger": "node src/cli.mjs ledger",
     "verify": "node src/cli.mjs verify reports/latest.json",
     "test": "node --test"
   },

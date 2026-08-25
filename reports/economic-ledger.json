@@ -1,0 +1,57 @@
+{
+  "schema": "last-maintainer/economic-ledger@1",
+  "recognizedRevenueCents": 0,
+  "currency": "USD",
+  "eventCount": 4,
+  "head": "9aea27bcd57118f87640cd109c2da17f81310353097f9fae89f1cc7cbc0b5805",
+  "events": [
+    {
+      "sequence": 1,
+      "occurredAt": "2026-08-25T11:55:00.000Z",
+      "type": "MARKET_REJECTED",
+      "subject": "Lilly Protocol issue bounties",
+      "amountCents": 0,
+      "currency": "USD",
+      "evidence": "https://github.com/Lilly-Protocol/lily-sdk/issues/33",
+      "note": "Reward titles existed, but escrow, payout terms, and payment history were not verified.",
+      "previousHash": "GENESIS",
+      "hash": "cb302adf3d8cd4d65e416e38d890857ba4cec63bd8627c618d70f6679d4d6f62"
+    },
+    {
+      "sequence": 2,
+      "occurredAt": "2026-08-25T12:04:00.000Z",
+      "type": "MARKET_REJECTED",
+      "subject": "MergeFund bootstrap route",
+      "amountCents": 0,
+      "currency": "USD",
+      "evidence": "https://app.mergefund.org/",
+      "note": "The live marketplace displayed two bounties and zero dollars paid; insufficient evidence for a stable earning loop.",
+      "previousHash": "cb302adf3d8cd4d65e416e38d890857ba4cec63bd8627c618d70f6679d4d6f62",
+      "hash": "c2120a393109c659b6f247fdcdec31ea7ac7d65bd7c0343902eb4cf15231f605"
+    },
+    {
+      "sequence": 3,
+      "occurredAt": "2026-08-25T12:19:26.093Z",
+      "type": "PRODUCT_CREATED",
+      "subject": "The Last Maintainer extinction index",
+      "amountCents": 0,
+      "currency": "USD",
+      "evidence": "https://github.com/qatarf947-ui/the-last-maintainer",
+      "note": "The first signed npm extinction index ranked request highest but adopted no package.",
+      "previousHash": "c2120a393109c659b6f247fdcdec31ea7ac7d65bd7c0343902eb4cf15231f605",
+      "hash": "b5543aed4b308808492f9ebdeb1e13345cd4e2516d0eac844e16c61f8825396c"
+    },
+    {
+      "sequence": 4,
+      "occurredAt": "2026-08-25T12:31:39.873Z",
+      "type": "REVENUE_SNAPSHOT",
+      "subject": "Company recognized revenue",
+      "amountCents": 0,
+      "currency": "USD",
+      "evidence": "https://github.com/qatarf947-ui/the-last-maintainer",
+      "note": "No revenue has been earned or claimed.",
+      "previousHash": "b5543aed4b308808492f9ebdeb1e13345cd4e2516d0eac844e16c61f8825396c",
+      "hash": "9aea27bcd57118f87640cd109c2da17f81310353097f9fae89f1cc7cbc0b5805"
+    }
+  ]
+}

@@ -22,9 +22,9 @@ The company only adopts a package after demand, abandonment, migration pain, lic
 
 Requires Node.js 22 or newer and no third-party packages.
 
-Run npm test, npm run scan, and then npm run verify.
+Run npm test, npm run scan, npm run ledger, and then npm run verify.
 
-Outputs are written to reports/latest.json and reports/latest.md.
+Outputs are written to reports/latest.json, reports/latest.md, and reports/economic-ledger.json. The economic ledger is hash-chained and recognizes revenue only from REVENUE_RECEIVED events.
 
 ## Status
 

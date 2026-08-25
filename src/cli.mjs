@@ -4,6 +4,7 @@ import { resolve } from "node:path";
 import { inspectNpmPackage } from "./sources.mjs";
 import { scoreCandidate } from "./scoring.mjs";
 import { buildSnapshot, renderMarkdown, verifySnapshot } from "./report.mjs";
+import { buildLedger, verifyLedger } from "./economics.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 
@@ -44,8 +45,32 @@ async function verify(pathArgument) {
   if (!result.valid) process.exitCode = 1;
 }
 
+async function ledger() {
+  const eventPath = resolve(root, "seeds", "economic-events.json");
+  const entries = JSON.parse(await readFile(eventPath, "utf8"));
+  const economicLedger = buildLedger(entries);
+  await mkdir(resolve(root, "reports"), { recursive: true });
+  await writeFile(
+    resolve(root, "reports", "economic-ledger.json"),
+    JSON.stringify(economicLedger, null, 2) + "\n",
+  );
+  console.log(
+    JSON.stringify(
+      {
+        valid: verifyLedger(economicLedger),
+        eventCount: economicLedger.eventCount,
+        recognizedRevenueCents: economicLedger.recognizedRevenueCents,
+        head: economicLedger.head,
+      },
+      null,
+      2,
+    ),
+  );
+}
+
 const [command = "scan", argument] = process.argv.slice(2);
 if (command === "scan") await scan();
+else if (command === "ledger") await ledger();
 else if (command === "verify") await verify(argument);
 else {
   console.error("Unknown command: " + command);

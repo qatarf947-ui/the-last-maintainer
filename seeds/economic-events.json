@@ -1,0 +1,38 @@
+[
+  {
+    "occurredAt": "2026-08-25T11:55:00.000Z",
+    "type": "MARKET_REJECTED",
+    "subject": "Lilly Protocol issue bounties",
+    "amountCents": 0,
+    "currency": "USD",
+    "evidence": "https://github.com/Lilly-Protocol/lily-sdk/issues/33",
+    "note": "Reward titles existed, but escrow, payout terms, and payment history were not verified."
+  },
+  {
+    "occurredAt": "2026-08-25T12:04:00.000Z",
+    "type": "MARKET_REJECTED",
+    "subject": "MergeFund bootstrap route",
+    "amountCents": 0,
+    "currency": "USD",
+    "evidence": "https://app.mergefund.org/",
+    "note": "The live marketplace displayed two bounties and zero dollars paid; insufficient evidence for a stable earning loop."
+  },
+  {
+    "occurredAt": "2026-08-25T12:19:26.093Z",
+    "type": "PRODUCT_CREATED",
+    "subject": "The Last Maintainer extinction index",
+    "amountCents": 0,
+    "currency": "USD",
+    "evidence": "https://github.com/qatarf947-ui/the-last-maintainer",
+    "note": "The first signed npm extinction index ranked request highest but adopted no package."
+  },
+  {
+    "occurredAt": "2026-08-25T12:31:39.873Z",
+    "type": "REVENUE_SNAPSHOT",
+    "subject": "Company recognized revenue",
+    "amountCents": 0,
+    "currency": "USD",
+    "evidence": "https://github.com/qatarf947-ui/the-last-maintainer",
+    "note": "No revenue has been earned or claimed."
+  }
+]
